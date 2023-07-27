@@ -28,6 +28,5 @@ jobs:
         cd automation
         pwd 
         ls -la 
-        cd /
-        pwd
+        gh repo clone DynastesMarinho/automation
         ls -la
