@@ -37,4 +37,6 @@ jobs:
         cd automation
         pwd 
         ls -la 
+        ls -la /home/runner/work/automation/automation/automation/scripts/
+        chmod +x /home/runner/work/automation/automation/automation/scripts/teste.sh
         bash ./home/runner/work/automation/automation/automation/scripts/teste.sh
