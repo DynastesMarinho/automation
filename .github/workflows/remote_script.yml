@@ -40,3 +40,4 @@ jobs:
         ls -la /home/runner/work/automation/automation/automation/scripts/
         chmod +x /home/runner/work/automation/automation/automation/scripts/teste.sh
         ./home/runner/work/automation/automation/automation/scripts/teste.sh
+        
