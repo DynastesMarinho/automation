@@ -16,11 +16,6 @@ jobs:
       run: echo "ls -ltr"
     - name: Rodando um script
       run: |
-        ls -la /home/runner/work/automation
         cd 
         pwd
-        ls -la 
-        cd /home/runner/work/automation/automation/work
-        ls -la 
-        chmod +x /home/runner/work/automation/scripts/teste.sh
-        ./home/runner/work/automation/scripts/teste.sh
+        ls -la
