@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: deploy
         # ...deployment-specific steps
-        echo "Building and deploying...."
+       # echo "Building and deploying...."
 
