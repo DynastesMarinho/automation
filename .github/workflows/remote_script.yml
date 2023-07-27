@@ -31,4 +31,3 @@ jobs:
         cd /
         pwd
         ls -la
-        find . -name *.sh
