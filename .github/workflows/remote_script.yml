@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'scrips/**'        # Monitora todos os arquivos dentro do diretório "src" e suas subpastas
+      
 jobs:
   echo_message:
     runs-on: ubuntu-latest
