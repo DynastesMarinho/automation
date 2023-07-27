@@ -1,0 +1,27 @@
+os: linux
+language: java
+jdk: openjdk8
+
+sudo: true
+
+git:
+  submodules: false
+
+stages:
+    - name: deployment  
+    
+before_deploy:
+  - openssl aes-256-cbc -K $encrypted_b0d51b9ff91b_key -iv encrypted_b0d51b9ff91b_iv -in deploy.enc -out deploy -d
+
+addons:
+  ssh_known_hosts: 
+  - esd41was03t.cpc.limited-use.ibm.com
+  - esd41was03t.cpc.limited-use.ibm.com:22
+
+jobs:
+  include:    
+    - stage: deployment
+      script: bash ./scripts/deploy-to-was-test.sh epubs https://github.ibm.com/IBM-WAS-ADMIN/was-ear.git/isc_esd_epubs_cl.ear
+  
+notifications:
+  email: true

@@ -1,0 +1,28 @@
+name: Execute Remote Script
+on:
+  push:
+    branches:
+      - main  # Change this to your desired branch
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up SSH key
+        uses: webfactory/ssh-agent@v0.5.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Execute Remote Script
+        run: |
+          # Replace the following variables with your server details.
+          SERVER_USER="travis"
+          SERVER_IP="esd41was03t.cpc.limited-use.ibm.com"
+          #REMOTE_SCRIPT_PATH="/home/travis/script.sh"
+          REMOTE_SCRIPT_PATH="/home/travis/script.sh"
+          ssh -i ./sshkey/deploy_key SERVER_USER@$SERVER_IP 'ls -ltr'
+          # ssh -o "StrictHostKeyChecking=no" $SERVER_USER@$SERVER_IP 'bash -s' < $REMOTE_SCRIPT_PATH
