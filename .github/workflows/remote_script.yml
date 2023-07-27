@@ -15,4 +15,8 @@ jobs:
     - name: Echo a message ls -ltr
       run: echo "ls -ltr"
     - name: Rodando um script
-      run: ls -ltr
+      run: |
+        ls -ltr
+        pwd 
+        chmod +x /scripts/teste.sh
+        ./scripts/teste.sh
