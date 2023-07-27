@@ -22,3 +22,6 @@ jobs:
         cd work
         pwd 
         ls -la 
+        cd automation
+        pwd 
+        ls -la
