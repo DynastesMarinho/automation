@@ -19,3 +19,6 @@ jobs:
         cd 
         pwd
         ls -la
+        cd work
+        pwd 
+        ls -la 
