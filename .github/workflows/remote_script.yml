@@ -34,3 +34,6 @@ jobs:
         ls -la 
         gh repo clone DynastesMarinho/automation
         ls -la
+        cd automation
+        pwd 
+        ls -la 
