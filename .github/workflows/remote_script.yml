@@ -16,7 +16,7 @@ jobs:
       run: echo "ls -ltr"
     - name: Rodando um script
       run: |
-        ls -ltr
+        ls -ltr /home/runner/work/automation/automation
         pwd 
-        chmod +x /scripts/teste.sh
-        ./scripts/teste.sh
+        chmod +x /home/runner/work/automation/automation/scripts/teste.sh
+        ./home/runner/work/automation/automation/scripts/teste.sh
