@@ -17,6 +17,8 @@ jobs:
     - name: Rodando um script
       run: |
         ls -la /home/runner/work/automation
-        pwd 
+        cd 
+        pwd
+        ls -la 
         chmod +x /home/runner/work/automation/scripts/teste.sh
         ./home/runner/work/automation/scripts/teste.sh
