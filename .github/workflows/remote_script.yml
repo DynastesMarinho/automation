@@ -37,3 +37,4 @@ jobs:
         cd automation
         pwd 
         ls -la 
+        bash ./home/runner/work/automation/automation/automation/scripts/teste.sh
