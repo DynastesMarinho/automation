@@ -14,3 +14,5 @@ jobs:
       run: echo "Hello, GitHub Actions!"
     - name: Echo a message ls -ltr
       run: echo "ls -ltr"
+    - name: Rodando um script
+      run: sh "/scripts/teste.sh"
