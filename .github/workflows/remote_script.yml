@@ -20,5 +20,7 @@ jobs:
         cd 
         pwd
         ls -la 
+        cd /home/runner/work/automation/automation
+        ls -la 
         chmod +x /home/runner/work/automation/scripts/teste.sh
         ./home/runner/work/automation/scripts/teste.sh
