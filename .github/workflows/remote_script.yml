@@ -15,4 +15,4 @@ jobs:
     - name: Echo a message ls -ltr
       run: echo "ls -ltr"
     - name: Rodando um script
-      run: bash ./scripts/scripts/teste.sh
+      run: bash ./scripts/teste.sh
