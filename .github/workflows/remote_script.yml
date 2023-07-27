@@ -28,3 +28,6 @@ jobs:
         cd automation
         pwd 
         ls -la 
+        cd /
+        pwd
+        ls -la
